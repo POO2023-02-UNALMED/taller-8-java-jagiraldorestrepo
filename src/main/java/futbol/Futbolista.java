@@ -10,11 +10,11 @@ public abstract class Futbolista implements Comparable<Object>{
 		this.edad = edad;
 		this.posicion = posicion;
 	}
-	
+	//////////////////////
 	public Futbolista() {
 		this("Maradona",30,"delantero");
 	}
-	
+	//////////////////////
 	public String toString() {
 		return "El futbolista "+nombre+" tiene "+edad+ ", y juega de "+posicion;
 	}
@@ -38,7 +38,7 @@ public abstract class Futbolista implements Comparable<Object>{
 	public String getPosicion() {
 		return posicion;
 	}
-	
+	//////////////////////
 	public boolean equals(Futbolista o) {
         boolean resultado=false;
         if (this.edad==o.edad && this.nombre.equals(o.nombre) && this.posicion.equals(o.posicion) && System.identityHashCode(this)==System.identityHashCode(o)) {
@@ -46,9 +46,9 @@ public abstract class Futbolista implements Comparable<Object>{
         }
         return resultado;
     }
-	
+	//////////////////////
 	public abstract boolean jugarConLasManos();
-	
+	//////////////////////
 	public int compareTo(Futbolista o) {
 		return 0;
 	}
