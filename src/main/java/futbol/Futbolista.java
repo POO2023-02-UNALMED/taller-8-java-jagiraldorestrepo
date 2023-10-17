@@ -39,5 +39,13 @@ public abstract class Futbolista implements Comparable<Object>{
 		return posicion;
 	}
 	
+	public boolean equals(Futbolista o) {
+        boolean resultado=false;
+        if (this.edad==o.edad && this.nombre.equals(o.nombre) && this.posicion.equals(o.posicion) && System.identityHashCode(this)==System.identityHashCode(o)) {
+        	resultado=true;
+        }
+        return resultado;
+    }
+	
 	
 }
