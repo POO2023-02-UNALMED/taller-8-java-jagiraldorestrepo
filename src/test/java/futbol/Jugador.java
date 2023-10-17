@@ -21,4 +21,14 @@ public class Jugador extends Futbolista{
 		return Math.abs(this.getEdad()-o.getEdad());
 	}
 	
+	@Override
+	public boolean jugarConLasManos() {
+		return false;
+	}
+	
+	public String toString() {
+		return "El futbolista "+getNombre()+" tiene "+getEdad()+ ", y juega de "+getPosicion()+" con el dorsal "+dorsal+ ". Ha marcado "+golesMarcados;
+	}
+	
+	
 }
